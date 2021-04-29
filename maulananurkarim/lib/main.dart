@@ -35,7 +35,7 @@ class Maulana extends StatelessWidget {
               radius: 75,
               backgroundColor: Colors.white,
               backgroundImage: NetworkImage(
-                'https://images.unsplash.com/photo-1583195764036-6dc248ac07d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80',
+                'https://lh3.googleusercontent.com/a-/AOh14Gix0FRODXKrFd3jFoX5L4b3u2fpQZtWS6Lv5o5w4Q',
               ),
             ),
             SizedBox(
@@ -117,6 +117,17 @@ class Maulana extends StatelessWidget {
                   onPressed: () {},
                 ),
               ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Text(
+              "Copyright 2021 All right reserved",
+              style: GoogleFonts.poppins(
+                  textStyle: TextStyle(color: Colors.white),
+                  fontSize: 10,
+                  fontWeight: FontWeight.normal,
+                  fontStyle: FontStyle.normal),
             ),
           ],
         ),
