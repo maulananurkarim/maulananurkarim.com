@@ -110,10 +110,10 @@ class Maulana extends StatelessWidget {
                 width: 300,
                 height: 45,
                 child: ElevatedButton.icon(
-                  icon: Icon(Ionicons.logo_facebook),
-                  label: Text("Facebook"),
+                  icon: Icon(Ionicons.logo_whatsapp),
+                  label: Text("WhatsApp"),
                   onPressed: () {
-                    launchURL('https://facebook.com/maulananurkarim/');
+                    launchURL('https://wa.me/6281563546094/');
                   },
                 ),
               ),
@@ -154,7 +154,15 @@ class Maulana extends StatelessWidget {
               height: 50,
             ),
             Text(
-              "Copyright " + years.toString() + " All right reserved.",
+              "Copyright " + years + " All right reserved.",
+              style: GoogleFonts.poppins(
+                  textStyle: TextStyle(color: Colors.white),
+                  fontSize: 10,
+                  fontWeight: FontWeight.normal,
+                  fontStyle: FontStyle.normal),
+            ),
+            Text(
+              "maulananurkarim.com",
               style: GoogleFonts.poppins(
                   textStyle: TextStyle(color: Colors.white),
                   fontSize: 10,
@@ -168,7 +176,7 @@ class Maulana extends StatelessWidget {
   }
 }
 
-String years = DateFormat('yyy').format(DateTime.now());
+String years = DateFormat('yyy').format(DateTime.now()).toString();
 
 launchURL(String url) async {
   if (await canLaunch(url)) {
