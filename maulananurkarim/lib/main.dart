@@ -12,7 +12,8 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: "Maulana Nurkarim", home: Maulana());
+    return MaterialApp(
+        title: "Maulana Nurkarim - Product Designer", home: Maulana());
   }
 }
 
