@@ -96,7 +96,7 @@ class Maulana extends StatelessWidget {
                   icon: Icon(Ionicons.logo_instagram),
                   label: Text("Instagram"),
                   onPressed: () {
-                    // launchURL();
+                    launchURL('https://instagram.com/maulananurkarim/');
                   },
                 ),
               ),
@@ -111,7 +111,9 @@ class Maulana extends StatelessWidget {
                 child: ElevatedButton.icon(
                   icon: Icon(Ionicons.logo_facebook),
                   label: Text("Facebook"),
-                  onPressed: () {},
+                  onPressed: () {
+                    launchURL('https://facebook.com/maulananurkarim/');
+                  },
                 ),
               ),
             ),
@@ -125,7 +127,9 @@ class Maulana extends StatelessWidget {
                 child: ElevatedButton.icon(
                   icon: Icon(Ionicons.logo_figma),
                   label: Text("Figma"),
-                  onPressed: () {},
+                  onPressed: () {
+                    launchURL('https://figma.com/@maulananurkarim/');
+                  },
                 ),
               ),
             ),
@@ -139,7 +143,9 @@ class Maulana extends StatelessWidget {
                 child: ElevatedButton.icon(
                   icon: Icon(Ionicons.logo_github),
                   label: Text("Github"),
-                  onPressed: () {},
+                  onPressed: () {
+                    launchURL('https://github.com/maulananurkarim/');
+                  },
                 ),
               ),
             ),
@@ -147,7 +153,7 @@ class Maulana extends StatelessWidget {
               height: 50,
             ),
             Text(
-              "Copyright " + years.toString() + " All right reserved",
+              "Copyright " + years.toString() + " All right reserved.",
               style: GoogleFonts.poppins(
                   textStyle: TextStyle(color: Colors.white),
                   fontSize: 10,
@@ -163,9 +169,7 @@ class Maulana extends StatelessWidget {
 
 String years = DateFormat('yyy').format(DateTime.now());
 
-launchURL() async {
-  const url = 'https://google.com';
-
+launchURL(String url) async {
   if (await canLaunch(url)) {
     await launch(url);
   } else {
