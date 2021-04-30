@@ -126,10 +126,10 @@ class Maulana extends StatelessWidget {
                 width: 300,
                 height: 45,
                 child: ElevatedButton.icon(
-                  icon: Icon(Ionicons.logo_figma),
-                  label: Text("Figma"),
+                  icon: Icon(Ionicons.logo_dribbble),
+                  label: Text("Dribbble"),
                   onPressed: () {
-                    launchURL('https://figma.com/@maulananurkarim/');
+                    launchURL('https://dribbble.com/maulananurkarim/');
                   },
                 ),
               ),
