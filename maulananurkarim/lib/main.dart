@@ -161,13 +161,24 @@ class Maulana extends StatelessWidget {
                   fontWeight: FontWeight.normal,
                   fontStyle: FontStyle.normal),
             ),
-            Text(
-              "maulananurkarim.com",
-              style: GoogleFonts.poppins(
-                  textStyle: TextStyle(color: Colors.white),
-                  fontSize: 10,
-                  fontWeight: FontWeight.normal,
-                  fontStyle: FontStyle.normal),
+            RichText(
+              text: TextSpan(
+                recognizer: TapGestureRecognizer()
+                  ..onTap = () async {
+                    var url = "https://maulananurkarim.com/";
+                    if (await canLaunch(url)) {
+                      await launch(url);
+                    } else {
+                      throw 'Could not launch $url';
+                    }
+                  },
+                text: "maulananurkarim.com",
+                style: GoogleFonts.poppins(
+                    textStyle: TextStyle(color: Colors.white),
+                    fontSize: 10,
+                    fontWeight: FontWeight.normal,
+                    fontStyle: FontStyle.normal),
+              ),
             ),
           ],
         ),
