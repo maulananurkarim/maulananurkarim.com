@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -160,7 +161,7 @@ class Maulana extends StatelessWidget {
   }
 }
 
-DateTime years = DateTime.now();
+String years = DateFormat('yyy').format(DateTime.now());
 
 launchURL() async {
   const url = 'https://google.com';
