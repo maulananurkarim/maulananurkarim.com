@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:ionicons/ionicons.dart';
@@ -46,19 +47,42 @@ class Maulana extends StatelessWidget {
               style: GoogleFonts.poppins(
                   textStyle: TextStyle(color: Colors.white),
                   fontSize: 24,
-                  fontWeight: FontWeight.normal,
+                  fontWeight: FontWeight.bold,
                   fontStyle: FontStyle.normal),
             ),
             SizedBox(
               height: 2,
             ),
-            Text(
-              "Product Designer at zapps.co.id",
-              style: GoogleFonts.poppins(
-                  textStyle: TextStyle(color: Colors.grey[300]),
-                  fontSize: 12,
-                  fontWeight: FontWeight.normal,
-                  fontStyle: FontStyle.normal),
+            RichText(
+              text: TextSpan(children: [
+                TextSpan(
+                  text: "Product Designer at ",
+                  style: GoogleFonts.poppins(
+                      textStyle: TextStyle(color: Colors.grey[300]),
+                      fontSize: 12,
+                      fontWeight: FontWeight.normal,
+                      fontStyle: FontStyle.normal),
+                ),
+                TextSpan(
+                  text: "zapps.co.id",
+                  recognizer: TapGestureRecognizer()
+                    ..onTap = () async {
+                      var url = "https://zapps.co.id/";
+                      if (await canLaunch(url)) {
+                        await launch(url);
+                      } else {
+                        throw 'Could not launch $url';
+                      }
+                    },
+                  style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                          color: Colors.grey[300],
+                          decoration: TextDecoration.underline),
+                      fontSize: 12,
+                      fontWeight: FontWeight.normal,
+                      fontStyle: FontStyle.italic),
+                ),
+              ]),
             ),
             SizedBox(
               height: 30,
@@ -122,7 +146,7 @@ class Maulana extends StatelessWidget {
               height: 50,
             ),
             Text(
-              "Copyright 2021 All right reserved",
+              "Copyright " + years.toString() + " All right reserved",
               style: GoogleFonts.poppins(
                   textStyle: TextStyle(color: Colors.white),
                   fontSize: 10,
@@ -135,6 +159,8 @@ class Maulana extends StatelessWidget {
     );
   }
 }
+
+DateTime years = DateTime.now();
 
 launchURL() async {
   const url = 'https://google.com';
