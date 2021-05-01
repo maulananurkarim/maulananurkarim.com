@@ -13,7 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: "Maulana Nurkarim - Product Designer", home: Maulana());
+        debugShowCheckedModeBanner: false,
+        title: "Maulana Nurkarim - Product Designer",
+        home: Maulana());
   }
 }
 
@@ -178,6 +180,16 @@ class Maulana extends StatelessWidget {
                     fontSize: 10,
                     fontWeight: FontWeight.normal,
                     fontStyle: FontStyle.normal),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Text(
+              "Made with ❤ Flutter",
+              style: GoogleFonts.poppins(
+                fontSize: 12,
+                color: Colors.white,
               ),
             ),
           ],
