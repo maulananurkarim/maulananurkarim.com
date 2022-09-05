@@ -3,29 +3,82 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "version.json": "a7693f89fabb205750f884c4d3e480c5",
-"index.html": "1a1b4afd29a99aae9c280441d4abf321",
-"/": "1a1b4afd29a99aae9c280441d4abf321",
-"main.dart.js": "79e499424ed94edb3fbd49c2794e0bbf",
+  "version.json": "b1e535cde827b60acc520e5d6917c5ba",
+"index.html": "400074001df4b3fd2eae6ca884bba9d4",
+"/": "400074001df4b3fd2eae6ca884bba9d4",
+"main.dart.js": "aea6f6d0296742e4de53400702539a3c",
+"flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
+"icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
+"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"manifest.json": "cf5082ce4d88028185e11c29a110f5df",
-"assets/AssetManifest.json": "b5e2ca8d35d142349f8e65bae055b036",
-"assets/NOTICES": "dbb3ec689eb1aea0ad11901de1ec8d41",
-"assets/FontManifest.json": "3ca64090b9da4a7c0a3988ea3cda93fc",
+"manifest.json": "c68d8241eeabd0e58b1bd82d3e0157e7",
+"assets/AssetManifest.json": "b7011de13603e799e153b85e3f519580",
+"assets/NOTICES": "ccad9bd61edc55a15019ea09021953f2",
+"assets/FontManifest.json": "16c485371d373430c1210dc67d792e29",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/packages/ionicons/fonts/Ionicons.ttf": "0cdf2a324d5c21f08c7f446476aa2ee3",
-"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac"
+"assets/shaders/ink_sparkle.frag": "f0d392dd6a27f8f1d301c473f9b546b0",
+"assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
+"assets/assets/svg/en.svg": "bd1aa534efbd224b6fcdef2f59b21dde",
+"assets/assets/svg/ic_camera.svg": "d0fa898b58b0aa4719550c39ef14429c",
+"assets/assets/svg/ic_image.svg": "75d26bc477cf1990a15d65c01ce2d0f5",
+"assets/assets/svg/ic_calendar.svg": "084fbc0fc93dba0feaf46ede311d608e",
+"assets/assets/svg/ic_file.svg": "00f6d4e132e185f845ef19ac31e6383f",
+"assets/assets/svg/id.svg": "4a8a93c3bf5e197615ac499af41a81ef",
+"assets/assets/svg/ic_add_file.svg": "efc7d87eefe79561d0d4f3b993865de5",
+"assets/assets/images/onboarding1.png": "305095e346d3a9b39585b70af21365fc",
+"assets/assets/images/ic_home_active.png": "d3a13a48deec77e7e21abe1bfb1f8a31",
+"assets/assets/images/onboarding3.png": "733f466130cf5a15a02899466a9c20cf",
+"assets/assets/images/onboarding2.png": "ca2186c426188fb5600a6e81acd772d3",
+"assets/assets/images/ic_chats_active.png": "47aac21f19ca7b2ee42eb4d2ae0dbdba",
+"assets/assets/images/ic_directory.png": "cec4e27f423d3e621f0e0b0732a0cd35",
+"assets/assets/images/ic_profile_active.png": "d4f331684f5c7d3046a5d0c31007edcd",
+"assets/assets/images/forgot_password.png": "78ebdc5826cbfaaf330c0f792325a6ce",
+"assets/assets/images/ic_feeds.png": "db64c533294d94eb52932d5cf430ca82",
+"assets/assets/images/ic_notif_active.png": "307766779c90d70b909e392f4ff9f41b",
+"assets/assets/images/decoration_login.png": "3bdc1d29096f69ea2f649eb11236a4bc",
+"assets/assets/images/onboarding5.png": "ccc273b8e659721ef0247e6a149b4d41",
+"assets/assets/images/ic_nearby.png": "01bc07ec01bbab1d73adf532de49c2dd",
+"assets/assets/images/ic_home.png": "31373789e4af681203779cf738649675",
+"assets/assets/images/onboarding4.png": "812d6b8ad7a87d222640f23089c4a33f",
+"assets/assets/images/banner.png": "fec529841917dcb73ea2cc146b162b12",
+"assets/assets/images/ic_clock_out.png": "d83358e314d55a41f44f42bd9ac06437",
+"assets/assets/images/ic_shareapp.png": "662b79573bfa4bc2f05cbc5d68995757",
+"assets/assets/images/ic_overtime.png": "c62f590e7ebe10c536b0afd3d0c45a36",
+"assets/assets/images/user.png": "3e62c017c753b76c8bf82dac8bf23c8d",
+"assets/assets/images/ic_temperature.png": "98f0ae4fff01fd81f17bd34dafd3f1c5",
+"assets/assets/images/ic_profile.png": "8f55d5a1d855fa01a2c8cd5127068666",
+"assets/assets/images/ic_communityinfo.png": "8474b3d5b2465a68d6028934db4a9000",
+"assets/assets/images/logo_header.png": "efe09427c0d9a578c4facfbf7651fb2c",
+"assets/assets/images/ic_announcement.png": "146a8b9fceca00bcdfcbaa14ac56370b",
+"assets/assets/images/ic_clock_in.png": "ad007e3d6966ca572794ae99b775fde0",
+"assets/assets/images/ic_payroll.png": "ce6f5a6cec25fc668a16638ead40c9a3",
+"assets/assets/images/logo.png": "79a249aebe90106a7585a4b478910a5b",
+"assets/assets/images/ic_feeds_active.png": "465c21335dff5ab0a31bc50ac7daa4af",
+"assets/assets/images/ic_notif.png": "b4ac5eeb39a3d3f12ac8a73cff9778d0",
+"assets/assets/images/ic_blood.png": "707de43edfe0900ff67d93f1a160525f",
+"assets/assets/images/ic_events.png": "7a85ae40a8253ac59f4081db5dc5387f",
+"assets/assets/images/ic_verified.png": "7a67d5eb17b8af6914dbe4b66f6773bb",
+"assets/assets/images/ic_chats.png": "2615b7767b290051699907e5feceaffe",
+"assets/assets/images/celsius.png": "645edb732e1497ff5c4415ff84019c3a",
+"assets/assets/images/ic_contact_us.png": "f5f54bf3a6b244212ff9b84fe2c62119",
+"assets/assets/images/ic_blog.png": "d8df1a82daa1bd6a8422d2ba918a93c0",
+"assets/assets/fonts/ProductSans-Medium.ttf": "9c51beb79b8ab173abd924ce39178f0b",
+"assets/assets/fonts/ProductSans-Bold.ttf": "a19a7b108b2e3961fc855c6ea5a6546f",
+"assets/assets/fonts/ProductSans-Italic.ttf": "af05b47de35fd5a5960ad1e440a4c0c7",
+"assets/assets/fonts/ProductSans-Regular.ttf": "b61c0ab33a818a0162f3e868babcef4b",
+"canvaskit/canvaskit.js": "2bc454a691c631b07a9307ac4ca47797",
+"canvaskit/profiling/canvaskit.js": "38164e5a72bdad0faa4ce740c9b8e564",
+"canvaskit/profiling/canvaskit.wasm": "95a45378b69e77af5ed2bc72b2209b94",
+"canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62"
 };
 
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = [
-  "/",
-"main.dart.js",
+  "main.dart.js",
 "index.html",
-"assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
@@ -34,7 +87,7 @@ self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
-        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
+        CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
@@ -124,9 +177,11 @@ self.addEventListener("fetch", (event) => {
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache.
+        // lazily populate the cache only if the resource was successfully fetched.
         return response || fetch(event.request).then((response) => {
-          cache.put(event.request, response.clone());
+          if (response && Boolean(response.ok)) {
+            cache.put(event.request, response.clone());
+          }
           return response;
         });
       })
