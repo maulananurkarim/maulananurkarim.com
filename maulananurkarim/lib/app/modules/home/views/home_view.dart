@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 
 import '../../../services/app_url_launcher_service.dart';
 import '../../../utils/app_utils.dart';
+import '../components/copy_rigths.dart';
 import '../components/personal_info.dart';
 import '../controllers/home_controller.dart';
 
@@ -24,26 +25,6 @@ class HomeView extends GetView<HomeController> {
           SizedBox(height: AppDimensions.paddingSizeExtraLarge),
         ],
       ),
-    );
-  }
-}
-
-class CopyRigths extends StatelessWidget {
-  const CopyRigths({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return GetBuilder<HomeController>(
-      builder: (controller) {
-        return Text(
-          "© Maulana Nurkarim. 2022 All rigths reserved",
-          style: TextStyle(
-            color: controller.isDarkMode ? AppColors.darkGreyColor : AppColors.lightGreyColor,
-          ),
-        );
-      },
     );
   }
 }
