@@ -2,10 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../utils/app_utils.dart';
-import '../components/action_button.dart';
-import '../components/change_theme_button.dart';
-import '../components/copy_rigths.dart';
-import '../components/personal_info.dart';
+import '../components/home_components.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
