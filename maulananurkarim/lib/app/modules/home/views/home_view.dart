@@ -89,28 +89,28 @@ class PersonalInfo extends StatelessWidget {
                     return Row(
                       children: [
                         IconButton(
-                          onPressed: () => AppUrlLauncherService.launchURL("https", "www.linkedin.com/in/maulananurkarim/"),
+                          onPressed: () => AppUrlLauncherService.launchURL("https://www.linkedin.com/in/maulananurkarim/"),
                           icon: Icon(
                             FontAwesomeIcons.linkedin,
                             color: controller.isDarkMode ? AppColors.darkGreyColor : AppColors.lightGreyColor,
                           ),
                         ),
                         IconButton(
-                          onPressed: () => AppUrlLauncherService.launchURL("https", "github.com/maulananurkarim"),
+                          onPressed: () => AppUrlLauncherService.launchURL("https://github.com/maulananurkarim"),
                           icon: Icon(
                             FontAwesomeIcons.github,
                             color: controller.isDarkMode ? AppColors.darkGreyColor : AppColors.lightGreyColor,
                           ),
                         ),
                         IconButton(
-                          onPressed: () => AppUrlLauncherService.launchURL("https", "www.instagram.com/maulananurkarim/"),
+                          onPressed: () => AppUrlLauncherService.launchURL("https://www.instagram.com/maulananurkarim/"),
                           icon: Icon(
                             FontAwesomeIcons.instagram,
                             color: controller.isDarkMode ? AppColors.darkGreyColor : AppColors.lightGreyColor,
                           ),
                         ),
                         IconButton(
-                          onPressed: () => AppUrlLauncherService.launchURL("https", "wa.me/6285157672011"),
+                          onPressed: () => AppUrlLauncherService.launchURL("https://wa.me/6285157672011"),
                           icon: Icon(
                             FontAwesomeIcons.whatsapp,
                             color: controller.isDarkMode ? AppColors.darkGreyColor : AppColors.lightGreyColor,
@@ -165,7 +165,7 @@ class ActionButton extends StatelessWidget {
               height: 45.0,
               width: 160.0,
               child: ElevatedButton.icon(
-                onPressed: () => AppUrlLauncherService.launchURL("https", "drive.google.com/file/d/17cocSvrjm2eR5EmrZEGuqanBAcuLaMLJ/view?usp=sharing"),
+                onPressed: () => AppUrlLauncherService.launchURL("https://drive.google.com/file/d/17cocSvrjm2eR5EmrZEGuqanBAcuLaMLJ/view?usp=sharing"),
                 label: const Text(
                   "Download CV",
                   style: TextStyle(
@@ -187,7 +187,7 @@ class ActionButton extends StatelessWidget {
               height: 45.0,
               width: 160.0,
               child: ElevatedButton(
-                onPressed: () => AppUrlLauncherService.launchURL("mailto", "maulananurkarim.dev@gmail.com"),
+                onPressed: () => AppUrlLauncherService.launchURL("mailto:maulananurkarim.dev@gmail.com"),
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(controller.isDarkMode ? AppColors.darkFillColor : AppColors.lightFillColor),
                 ),
